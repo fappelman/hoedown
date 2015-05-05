@@ -21,5 +21,3 @@ FOUNDATION_EXPORT const unsigned char hoedownVersionString[];
 #import <hoedown/buffer.h>
 #import <hoedown/escape.h>
 #import <hoedown/stack.h>
-
-"HEllo"
