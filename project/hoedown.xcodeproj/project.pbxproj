@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FDD6823D1AF7E89800C2B1DF /* hoedown.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD6823C1AF7E89800C2B1DF /* hoedown.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDD682431AF7E89800C2B1DF /* hoedown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD682371AF7E89800C2B1DF /* hoedown.framework */; };
-		FDD6824A1AF7E89900C2B1DF /* hoedownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD682491AF7E89900C2B1DF /* hoedownTests.m */; };
 		FDD682631AF7E95400C2B1DF /* document.c in Sources */ = {isa = PBXBuildFile; fileRef = FDD682531AF7E95400C2B1DF /* document.c */; };
 		FDD682641AF7E95400C2B1DF /* document.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD682541AF7E95400C2B1DF /* document.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDD682651AF7E95400C2B1DF /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = FDD682551AF7E95400C2B1DF /* html.c */; };
@@ -28,23 +26,10 @@
 		FDD682721AF7E95400C2B1DF /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = FDD682621AF7E95400C2B1DF /* version.c */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FDD682441AF7E89800C2B1DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FDD6822E1AF7E89800C2B1DF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FDD682361AF7E89800C2B1DF;
-			remoteInfo = hoedown;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		FDD682371AF7E89800C2B1DF /* hoedown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hoedown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD6823B1AF7E89800C2B1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD6823C1AF7E89800C2B1DF /* hoedown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hoedown.h; sourceTree = "<group>"; };
-		FDD682421AF7E89800C2B1DF /* hoedownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hoedownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDD682481AF7E89900C2B1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDD682491AF7E89900C2B1DF /* hoedownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hoedownTests.m; sourceTree = "<group>"; };
 		FDD682531AF7E95400C2B1DF /* document.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = document.c; path = ../../src/document.c; sourceTree = "<group>"; };
 		FDD682541AF7E95400C2B1DF /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = document.h; path = ../../src/document.h; sourceTree = "<group>"; };
 		FDD682551AF7E95400C2B1DF /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html.c; path = ../../src/html.c; sourceTree = "<group>"; };
@@ -71,14 +56,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDD6823F1AF7E89800C2B1DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDD682431AF7E89800C2B1DF /* hoedown.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				FDD682391AF7E89800C2B1DF /* hoedown */,
-				FDD682461AF7E89800C2B1DF /* hoedownTests */,
 				FDD682381AF7E89800C2B1DF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,7 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				FDD682371AF7E89800C2B1DF /* hoedown.framework */,
-				FDD682421AF7E89800C2B1DF /* hoedownTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,23 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				FDD6823B1AF7E89800C2B1DF /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		FDD682461AF7E89800C2B1DF /* hoedownTests */ = {
-			isa = PBXGroup;
-			children = (
-				FDD682491AF7E89900C2B1DF /* hoedownTests.m */,
-				FDD682471AF7E89900C2B1DF /* Supporting Files */,
-			);
-			path = hoedownTests;
-			sourceTree = "<group>";
-		};
-		FDD682471AF7E89900C2B1DF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FDD682481AF7E89900C2B1DF /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -197,24 +155,6 @@
 			productReference = FDD682371AF7E89800C2B1DF /* hoedown.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FDD682411AF7E89800C2B1DF /* hoedownTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FDD682501AF7E89900C2B1DF /* Build configuration list for PBXNativeTarget "hoedownTests" */;
-			buildPhases = (
-				FDD6823E1AF7E89800C2B1DF /* Sources */,
-				FDD6823F1AF7E89800C2B1DF /* Frameworks */,
-				FDD682401AF7E89800C2B1DF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FDD682451AF7E89800C2B1DF /* PBXTargetDependency */,
-			);
-			name = hoedownTests;
-			productName = hoedownTests;
-			productReference = FDD682421AF7E89800C2B1DF /* hoedownTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -225,9 +165,6 @@
 				ORGANIZATIONNAME = "Invisible Pixel";
 				TargetAttributes = {
 					FDD682361AF7E89800C2B1DF = {
-						CreatedOnToolsVersion = 6.3.1;
-					};
-					FDD682411AF7E89800C2B1DF = {
 						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
@@ -245,20 +182,12 @@
 			projectRoot = "";
 			targets = (
 				FDD682361AF7E89800C2B1DF /* hoedown */,
-				FDD682411AF7E89800C2B1DF /* hoedownTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		FDD682351AF7E89800C2B1DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FDD682401AF7E89800C2B1DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -284,23 +213,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDD6823E1AF7E89800C2B1DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDD6824A1AF7E89900C2B1DF /* hoedownTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FDD682451AF7E89800C2B1DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FDD682361AF7E89800C2B1DF /* hoedown */;
-			targetProxy = FDD682441AF7E89800C2B1DF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		FDD6824B1AF7E89900C2B1DF /* Debug */ = {
@@ -423,38 +336,6 @@
 			};
 			name = Release;
 		};
-		FDD682511AF7E89900C2B1DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = hoedownTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		FDD682521AF7E89900C2B1DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = hoedownTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -472,15 +353,6 @@
 			buildConfigurations = (
 				FDD6824E1AF7E89900C2B1DF /* Debug */,
 				FDD6824F1AF7E89900C2B1DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FDD682501AF7E89900C2B1DF /* Build configuration list for PBXNativeTarget "hoedownTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FDD682511AF7E89900C2B1DF /* Debug */,
-				FDD682521AF7E89900C2B1DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
