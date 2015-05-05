@@ -10,8 +10,7 @@ libhoedown.so*
 !hoedown/
 
 # Xcode
-.DS_Store
-*/build/*
+build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -21,9 +20,9 @@ libhoedown.so*
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
-profile
+*.xccheckout
 *.moved-aside
 DerivedData
-.idea/
 *.hmap
-xcuserdata/*
+*.ipa
+*.xcuserstate
