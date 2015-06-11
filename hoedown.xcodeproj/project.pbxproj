@@ -43,7 +43,7 @@
 		FD415F781AF8CE11008753D8 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = src/stack.h; sourceTree = SOURCE_ROOT; };
 		FD415F791AF8CE11008753D8 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = src/version.c; sourceTree = SOURCE_ROOT; };
 		FD415F7A1AF8CE11008753D8 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = src/version.h; sourceTree = SOURCE_ROOT; };
-		FDD682371AF7E89800C2B1DF /* hoedown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = hoedown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD682371AF7E89800C2B1DF /* Hoedown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hoedown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD6823B1AF7E89800C2B1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD6823C1AF7E89800C2B1DF /* hoedown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hoedown.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +70,7 @@
 		FDD682381AF7E89800C2B1DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDD682371AF7E89800C2B1DF /* hoedown.framework */,
+				FDD682371AF7E89800C2B1DF /* Hoedown.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 			);
 			name = Hoedown;
 			productName = hoedown;
-			productReference = FDD682371AF7E89800C2B1DF /* hoedown.framework */;
+			productReference = FDD682371AF7E89800C2B1DF /* Hoedown.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
