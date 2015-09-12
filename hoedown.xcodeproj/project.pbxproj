@@ -23,7 +23,7 @@
 		FD415F881AF8CE11008753D8 /* stack.h in Headers */ = {isa = PBXBuildFile; fileRef = FD415F781AF8CE11008753D8 /* stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD415F891AF8CE11008753D8 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = FD415F791AF8CE11008753D8 /* version.c */; };
 		FD415F8A1AF8CE11008753D8 /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = FD415F7A1AF8CE11008753D8 /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDD6823D1AF7E89800C2B1DF /* hoedown.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD6823C1AF7E89800C2B1DF /* hoedown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDD6823D1AF7E89800C2B1DF /* Hoedown.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD6823C1AF7E89800C2B1DF /* Hoedown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDEDAF571BA44DD90016BFD3 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = FD415F751AF8CE11008753D8 /* html.c */; };
 		FDEDAF581BA44DD90016BFD3 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = FD415F6B1AF8CE11008753D8 /* autolink.c */; };
 		FDEDAF591BA44DD90016BFD3 /* document.c in Sources */ = {isa = PBXBuildFile; fileRef = FD415F6F1AF8CE11008753D8 /* document.c */; };
@@ -34,7 +34,7 @@
 		FDEDAF5E1BA44DD90016BFD3 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = FD415F771AF8CE11008753D8 /* stack.c */; };
 		FDEDAF5F1BA44DD90016BFD3 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = FD415F6D1AF8CE11008753D8 /* buffer.c */; };
 		FDEDAF621BA44DD90016BFD3 /* escape.h in Headers */ = {isa = PBXBuildFile; fileRef = FD415F721AF8CE11008753D8 /* escape.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDEDAF631BA44DD90016BFD3 /* hoedown.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD6823C1AF7E89800C2B1DF /* hoedown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDEDAF631BA44DD90016BFD3 /* Hoedown.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD6823C1AF7E89800C2B1DF /* Hoedown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDEDAF641BA44DD90016BFD3 /* autolink.h in Headers */ = {isa = PBXBuildFile; fileRef = FD415F6C1AF8CE11008753D8 /* autolink.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDEDAF651BA44DD90016BFD3 /* html.h in Headers */ = {isa = PBXBuildFile; fileRef = FD415F761AF8CE11008753D8 /* html.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDEDAF661BA44DD90016BFD3 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = FD415F6E1AF8CE11008753D8 /* buffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,10 +60,11 @@
 		FD415F781AF8CE11008753D8 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = src/stack.h; sourceTree = SOURCE_ROOT; };
 		FD415F791AF8CE11008753D8 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = src/version.c; sourceTree = SOURCE_ROOT; };
 		FD415F7A1AF8CE11008753D8 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = src/version.h; sourceTree = SOURCE_ROOT; };
-		FDD682371AF7E89800C2B1DF /* Hoedown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hoedown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD682371AF7E89800C2B1DF /* Hoedown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hoedown.framework; path = HoedownOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD6823B1AF7E89800C2B1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FDD6823C1AF7E89800C2B1DF /* hoedown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hoedown.h; sourceTree = "<group>"; };
+		FDD6823C1AF7E89800C2B1DF /* Hoedown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hoedown.h; sourceTree = "<group>"; };
 		FDEDAF6E1BA44DD90016BFD3 /* HoedowniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HoedowniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEDAF701BA454CF0016BFD3 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +96,7 @@
 		FDD682381AF7E89800C2B1DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDD682371AF7E89800C2B1DF /* hoedown.framework */,
+				FDD682371AF7E89800C2B1DF /* Hoedown.framework */,
 				FDEDAF6E1BA44DD90016BFD3 /* HoedowniOS.framework */,
 			);
 			name = Products;
@@ -105,7 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				FDD682731AF7E95A00C2B1DF /* src */,
-				FDD6823C1AF7E89800C2B1DF /* hoedown.h */,
+				FDD6823C1AF7E89800C2B1DF /* Hoedown.h */,
+				FDEDAF701BA454CF0016BFD3 /* module.modulemap */,
 				FDD6823A1AF7E89800C2B1DF /* Supporting Files */,
 			);
 			path = hoedown;
@@ -150,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD415F821AF8CE11008753D8 /* escape.h in Headers */,
-				FDD6823D1AF7E89800C2B1DF /* hoedown.h in Headers */,
+				FDD6823D1AF7E89800C2B1DF /* Hoedown.h in Headers */,
 				FD415F7C1AF8CE11008753D8 /* autolink.h in Headers */,
 				FD415F861AF8CE11008753D8 /* html.h in Headers */,
 				FD415F7E1AF8CE11008753D8 /* buffer.h in Headers */,
@@ -165,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDEDAF621BA44DD90016BFD3 /* escape.h in Headers */,
-				FDEDAF631BA44DD90016BFD3 /* hoedown.h in Headers */,
+				FDEDAF631BA44DD90016BFD3 /* Hoedown.h in Headers */,
 				FDEDAF641BA44DD90016BFD3 /* autolink.h in Headers */,
 				FDEDAF651BA44DD90016BFD3 /* html.h in Headers */,
 				FDEDAF661BA44DD90016BFD3 /* buffer.h in Headers */,
@@ -399,6 +401,7 @@
 				INFOPLIST_FILE = hoedown/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = hoedown/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.invisiblepixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -417,6 +420,7 @@
 				INFOPLIST_FILE = hoedown/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = hoedown/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.invisiblepixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -434,6 +438,7 @@
 				INFOPLIST_FILE = hoedown/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = hoedown/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.invisiblepixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -451,6 +456,7 @@
 				INFOPLIST_FILE = hoedown/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = hoedown/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.invisiblepixel.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
