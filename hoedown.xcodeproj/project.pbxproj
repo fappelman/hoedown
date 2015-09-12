@@ -63,7 +63,7 @@
 		FDD682371AF7E89800C2B1DF /* Hoedown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hoedown.framework; path = HoedownOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD6823B1AF7E89800C2B1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD6823C1AF7E89800C2B1DF /* Hoedown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hoedown.h; sourceTree = "<group>"; };
-		FDEDAF6E1BA44DD90016BFD3 /* HoedowniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HoedowniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDEDAF6E1BA44DD90016BFD3 /* Hoedown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hoedown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDEDAF701BA454CF0016BFD3 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				FDD682371AF7E89800C2B1DF /* Hoedown.framework */,
-				FDEDAF6E1BA44DD90016BFD3 /* HoedowniOS.framework */,
+				FDEDAF6E1BA44DD90016BFD3 /* Hoedown.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			);
 			name = HoedowniOS;
 			productName = hoedown;
-			productReference = FDEDAF6E1BA44DD90016BFD3 /* HoedowniOS.framework */;
+			productReference = FDEDAF6E1BA44DD90016BFD3 /* Hoedown.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -403,7 +403,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = hoedown/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.invisiblepixel.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hoedown;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -422,7 +422,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = hoedown/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.invisiblepixel.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hoedown;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -440,7 +440,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = hoedown/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.invisiblepixel.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hoedown;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -458,7 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = hoedown/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.invisiblepixel.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Hoedown;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
