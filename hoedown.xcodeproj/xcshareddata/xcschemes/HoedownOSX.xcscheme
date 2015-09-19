@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FDD682361AF7E89800C2B1DF"
-               BuildableName = "HoedownOSX.framework"
+               BuildableName = "Hoedown.framework"
                BlueprintName = "HoedownOSX"
                ReferencedContainer = "container:hoedown.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDD682361AF7E89800C2B1DF"
-            BuildableName = "HoedownOSX.framework"
+            BuildableName = "Hoedown.framework"
             BlueprintName = "HoedownOSX"
             ReferencedContainer = "container:hoedown.xcodeproj">
          </BuildableReference>
@@ -79,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDD682361AF7E89800C2B1DF"
-            BuildableName = "HoedownOSX.framework"
+            BuildableName = "Hoedown.framework"
             BlueprintName = "HoedownOSX"
             ReferencedContainer = "container:hoedown.xcodeproj">
          </BuildableReference>
@@ -97,7 +97,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FDD682361AF7E89800C2B1DF"
-            BuildableName = "HoedownOSX.framework"
+            BuildableName = "Hoedown.framework"
             BlueprintName = "HoedownOSX"
             ReferencedContainer = "container:hoedown.xcodeproj">
          </BuildableReference>
