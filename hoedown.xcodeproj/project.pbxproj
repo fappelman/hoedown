@@ -60,7 +60,7 @@
 		FD415F781AF8CE11008753D8 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = src/stack.h; sourceTree = SOURCE_ROOT; };
 		FD415F791AF8CE11008753D8 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = version.c; path = src/version.c; sourceTree = SOURCE_ROOT; };
 		FD415F7A1AF8CE11008753D8 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = version.h; path = src/version.h; sourceTree = SOURCE_ROOT; };
-		FDD682371AF7E89800C2B1DF /* Hoedown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Hoedown.framework; path = HoedownOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD682371AF7E89800C2B1DF /* Hoedown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hoedown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD6823B1AF7E89800C2B1DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD6823C1AF7E89800C2B1DF /* Hoedown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hoedown.h; sourceTree = "<group>"; };
 		FDEDAF6E1BA44DD90016BFD3 /* Hoedown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hoedown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -222,7 +222,7 @@
 		FDD6822E1AF7E89800C2B1DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Invisible Pixel";
 				TargetAttributes = {
 					FDD682361AF7E89800C2B1DF = {
@@ -314,8 +314,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -362,8 +364,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -431,6 +435,7 @@
 		FDEDAF6C1BA44DD90016BFD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -449,6 +454,7 @@
 		FDEDAF6D1BA44DD90016BFD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
