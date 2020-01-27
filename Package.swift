@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "Hoedown",
+    platforms: [
+        .macOS(.v10_14)
+    ],
     products: [
       .library(
           name: "Hoedown",
@@ -11,9 +14,6 @@ let package = Package(
       .library(
           name: "CHoedown",
           targets: ["CHoedown"])
-    ],
-    platforms: [
-        .macOS(.v10_14)
     ],
     dependencies: [
     ],
