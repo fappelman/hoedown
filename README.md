@@ -1,6 +1,21 @@
 Hoedown
 =======
 
+## This software has been changed
+
+This version is forked from [njdehoog/hoedown](https://github.com/njdehoog/hoedown).
+and [njdehoog/hoedown-swift](https://github.com/njdehoog/hoedown-swift).
+
+This version combines the two above repositories into one. The module originally
+called `hoedown` is now a library named `CHoedown` and the module originally called
+`hoedown-swift` is not called `Howdown`. Additionally this package is now
+compabile with Xcode version 11. So it can be imported into a module using the
+Pacakage manager inside Xcode or alternatively added to a `Package.swift`file
+
+The `Install` section below is irrelevant when used as a package and may some adjustments.
+
+# What follows is the original README as provided by [Niels de Hoog](https://github.com/njdehoog).
+
 [![Build Status](https://travis-ci.org/hoedown/hoedown.png?branch=master)](https://travis-ci.org/hoedown/hoedown)
 
 `Hoedown` is a revived fork of [Sundown](https://github.com/vmg/sundown),
