@@ -14,10 +14,10 @@ FOUNDATION_EXPORT double hoedownVersionNumber;
 //! Project version string for hoedown.
 FOUNDATION_EXPORT const unsigned char hoedownVersionString[];
 
-#import <Hoedown/document.h>
-#import <Hoedown/html.h>
-#import <Hoedown/version.h>
-#import <Hoedown/autolink.h>
-#import <Hoedown/buffer.h>
-#import <Hoedown/escape.h>
-#import <Hoedown/stack.h>
+#import <document.h>
+#import <html.h>
+#import <version.h>
+#import <autolink.h>
+#import <buffer.h>
+#import <escape.h>
+#import <stack.h>

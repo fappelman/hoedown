@@ -59,6 +59,7 @@ clean:
 	$(RM) Sources/CHoedown/*.o bin/*.o
 	$(RM) libhoedown.so libhoedown.so.1 libhoedown.a
 	$(RM) bin/hoedown bin/smartypants
+	$(RM) -r .build
 
 # Installing
 
