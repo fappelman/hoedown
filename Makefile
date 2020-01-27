@@ -1,4 +1,4 @@
-CFLAGS = -g -O3 -ansi -pedantic -Wall -Wextra -Wno-unused-parameter -ISources/Hoedown
+CFLAGS = -g -O3 -ansi -pedantic -Wall -Wextra -Wno-unused-parameter -ISources/CHoedown
 PREFIX = /usr/local
 
 ifneq ($(OS),Windows_NT)
@@ -6,15 +6,15 @@ ifneq ($(OS),Windows_NT)
 endif
 
 HOEDOWN_SRC=\
-	Sources/Hoedown/autolink.o \
-	Sources/Hoedown/buffer.o \
-	Sources/Hoedown/document.o \
-	Sources/Hoedown/escape.o \
-	Sources/Hoedown/html.o \
-	Sources/Hoedown/html_blocks.o \
-	Sources/Hoedown/html_smartypants.o \
-	Sources/Hoedown/stack.o \
-	Sources/Hoedown/version.o
+	Sources/CHoedown/autolink.o \
+	Sources/CHoedown/buffer.o \
+	Sources/CHoedown/document.o \
+	Sources/CHoedown/escape.o \
+	Sources/CHoedown/html.o \
+	Sources/CHoedown/html_blocks.o \
+	Sources/CHoedown/html_smartypants.o \
+	Sources/CHoedown/stack.o \
+	Sources/CHoedown/version.o
 
 .PHONY:		all test test-pl clean
 
@@ -41,7 +41,7 @@ bin/smartypants: bin/smartypants.o $(HOEDOWN_SRC)
 
 # Perfect hashing
 
-Sources/Hoedown/html_blocks.c: html_block_names.gperf
+Sources/CHoedown/html_blocks.c: html_block_names.gperf
 	gperf -L ANSI-C -N hoedown_find_block_tag -c -C -E -S 1 --ignore-case -m100 $^ > $@
 
 # Testing
@@ -56,7 +56,7 @@ test-pl: hoedown
 # Housekeeping
 
 clean:
-	$(RM) Sources/Hoedown/*.o bin/*.o
+	$(RM) Sources/CHoedown/*.o bin/*.o
 	$(RM) libhoedown.so libhoedown.so.1 libhoedown.a
 	$(RM) bin/hoedown bin/smartypants
 
@@ -72,12 +72,12 @@ install:
 	install -m755 bin/smartypants $(DESTDIR)$(PREFIX)/bin
 
 	install -m755 -d $(DESTDIR)$(PREFIX)/include/hoedown
-	install -m644 Sources/Hoedown/*.h $(DESTDIR)$(PREFIX)/include/hoedown
+	install -m644 Sources/CHoedown/*.h $(DESTDIR)$(PREFIX)/include/hoedown
 
 # Generic object compilations
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-Sources/Hoedown/html_blocks.o: Sources/Hoedown/html_blocks.c
+Sources/CHoedown/html_blocks.o: Sources/CHoedown/html_blocks.c
 	$(CC) $(CFLAGS) -Wno-static-in-inline -c -o $@ $<
