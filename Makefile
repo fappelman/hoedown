@@ -1,4 +1,4 @@
-CFLAGS = -g -O3 -ansi -pedantic -Wall -Wextra -Wno-unused-parameter -Isrc
+CFLAGS = -g -O3 -ansi -pedantic -Wall -Wextra -Wno-unused-parameter -ISources/Hoedown
 PREFIX = /usr/local
 
 ifneq ($(OS),Windows_NT)
@@ -6,19 +6,19 @@ ifneq ($(OS),Windows_NT)
 endif
 
 HOEDOWN_SRC=\
-	src/autolink.o \
-	src/buffer.o \
-	src/document.o \
-	src/escape.o \
-	src/html.o \
-	src/html_blocks.o \
-	src/html_smartypants.o \
-	src/stack.o \
-	src/version.o
+	Sources/Hoedown/autolink.o \
+	Sources/Hoedown/buffer.o \
+	Sources/Hoedown/document.o \
+	Sources/Hoedown/escape.o \
+	Sources/Hoedown/html.o \
+	Sources/Hoedown/html_blocks.o \
+	Sources/Hoedown/html_smartypants.o \
+	Sources/Hoedown/stack.o \
+	Sources/Hoedown/version.o
 
 .PHONY:		all test test-pl clean
 
-all:		libhoedown.so hoedown smartypants
+all:		libhoedown.so bin/hoedown bin/smartypants
 
 # Libraries
 
@@ -33,20 +33,20 @@ libhoedown.a: $(HOEDOWN_SRC)
 
 # Executables
 
-hoedown: bin/hoedown.o $(HOEDOWN_SRC)
+bin/hoedown: bin/hoedown.o $(HOEDOWN_SRC)
 	$(CC) $^ $(LDFLAGS) -o $@
 
-smartypants: bin/smartypants.o $(HOEDOWN_SRC)
+bin/smartypants: bin/smartypants.o $(HOEDOWN_SRC)
 	$(CC) $^ $(LDFLAGS) -o $@
 
 # Perfect hashing
 
-src/html_blocks.c: html_block_names.gperf
+Sources/Hoedown/html_blocks.c: html_block_names.gperf
 	gperf -L ANSI-C -N hoedown_find_block_tag -c -C -E -S 1 --ignore-case -m100 $^ > $@
 
 # Testing
 
-test: hoedown
+test: bin/hoedown
 	python test/runner.py
 
 test-pl: hoedown
@@ -56,9 +56,9 @@ test-pl: hoedown
 # Housekeeping
 
 clean:
-	$(RM) src/*.o bin/*.o
+	$(RM) Sources/Hoedown/*.o bin/*.o
 	$(RM) libhoedown.so libhoedown.so.1 libhoedown.a
-	$(RM) hoedown smartypants hoedown.exe smartypants.exe
+	$(RM) bin/hoedown bin/smartypants
 
 # Installing
 
@@ -68,16 +68,16 @@ install:
 	install -m755 -d $(DESTDIR)$(PREFIX)/include
 
 	install -m644 libhoedown.* $(DESTDIR)$(PREFIX)/lib
-	install -m755 hoedown $(DESTDIR)$(PREFIX)/bin
-	install -m755 smartypants $(DESTDIR)$(PREFIX)/bin
+	install -m755 bin/hoedown $(DESTDIR)$(PREFIX)/bin
+	install -m755 bin/smartypants $(DESTDIR)$(PREFIX)/bin
 
 	install -m755 -d $(DESTDIR)$(PREFIX)/include/hoedown
-	install -m644 src/*.h $(DESTDIR)$(PREFIX)/include/hoedown
+	install -m644 Sources/Hoedown/*.h $(DESTDIR)$(PREFIX)/include/hoedown
 
 # Generic object compilations
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
-src/html_blocks.o: src/html_blocks.c
+Sources/Hoedown/html_blocks.o: Sources/Hoedown/html_blocks.c
 	$(CC) $(CFLAGS) -Wno-static-in-inline -c -o $@ $<

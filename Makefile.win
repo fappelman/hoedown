@@ -1,16 +1,16 @@
 CC = cl
-CFLAGS = /O2 /sdl /Isrc /D_CRT_SECURE_NO_WARNINGS
+CFLAGS = /O2 /sdl /ISources\Hoedown /D_CRT_SECURE_NO_WARNINGS
 
 HOEDOWN_SRC = \
-	src\autolink.obj \
-	src\buffer.obj \
-	src\document.obj \
-	src\escape.obj \
-	src\html.obj \
-	src\html_blocks.obj \
-	src\html_smartypants.obj \
-	src\stack.obj \
-	src\version.obj
+	Sources\Hoedown\autolink.obj \
+	Sources\Hoedown\buffer.obj \
+	Sources\Hoedown\document.obj \
+	Sources\Hoedown\escape.obj \
+	Sources\Hoedown\html.obj \
+	Sources\Hoedown\html_blocks.obj \
+	Sources\Hoedown\html_smartypants.obj \
+	Sources\Hoedown\stack.obj \
+	Sources\Hoedown\version.obj
 
 all: hoedown.dll hoedown.exe smartypants.exe
 
